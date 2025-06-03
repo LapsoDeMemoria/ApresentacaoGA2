@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-family: cursive;
+	font-family: 'Poppins', sans-serif;
 	vertical-align: baseline;
 }
 
@@ -212,4 +212,64 @@ img{
     from {opacity: .4}
     to {opacity: 1}
   }
-  
+@media (max-width: 768px) {
+    body, main {
+        flex-direction: column;
+        padding: 2%;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .conteudo-slide {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #texto-slide {
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .imagem {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        box-shadow: none;
+    }
+
+    .top-text-imagem, .bot-text-imagem {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    small {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    button {
+        width: 80%;
+        padding: 4%;
+        font-size: 16px;
+    }
+
+    .prev, .next {
+        font-size: 24px;
+        padding: 8px;
+    }
+}
